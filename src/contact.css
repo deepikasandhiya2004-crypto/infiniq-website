@@ -1,0 +1,87 @@
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;min-height:100%}
+body{font-family:"Inter",sans-serif;color:#172a43;background:#fff}
+a{text-decoration:none}
+
+.navbar{width:calc(100% - 120px);height:74px;position:absolute;top:22px;left:60px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:#f4f5f7;border-radius:45px;z-index:10}
+.logo{display:flex;align-items:center}
+.logo-mark{position:relative;width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;color:#3868d8}
+.logo-mark span{font-size:39px;line-height:1;font-weight:700}
+.logo-mark b{position:absolute;right:0px;bottom:6px;font-size:14px;transform:rotate(35deg)}
+.navbar nav{display:flex;align-items:center;gap:30px}
+.navbar nav a{color:#536177;font-size:13px;font-weight:500}
+.navbar nav a.active{color:#3d617b;border-bottom:2px solid #49c873;padding-bottom:4px}
+.get-started{padding:14px 25px;border-radius:30px;background:#39c96f;color:#fff!important;font-size:13px!important;font-weight:600!important;box-shadow:0 5px 15px rgba(57,201,111,.25);border:0!important}
+
+.contact-hero{height:465px;background:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding-top:48px}
+.hero-inner{display:flex;flex-direction:column;align-items:center}
+.hero-badge{padding:7px 12px;border:1px solid #9bb3ca;border-radius:7px;color:#244c72;font-size:10px;font-weight:600;margin-bottom:20px}
+.hero-inner h1{color:#164f82;font-size:42px;line-height:1.2;font-weight:500;letter-spacing:-1.5px;margin-bottom:15px}
+.hero-inner p{color:#9aa8bb;font-size:14px;line-height:1.7;font-weight:400}
+
+.connect{padding:75px 6.5% 85px;background:#fff}
+.connect-grid{max-width:1260px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:95px}
+.left-column h2{font-size:42px;line-height:1.2;color:#132a45;font-weight:500;letter-spacing:-1.4px;margin:0 0 38px}
+.info-card{height:82px;width:100%;border-radius:13px;background:#f7f8fa;box-shadow:0 8px 25px rgba(24,50,80,.08);display:flex;align-items:center;padding:0 26px;gap:18px;margin-bottom:19px;color:#18304d}
+.card-icon{width:32px;font-size:22px;color:#6e7d91;text-align:center}
+.info-card strong{display:block;font-size:14px;font-weight:600;margin-bottom:7px}
+.info-card small{display:block;font-size:12px;color:#8b98aa;font-weight:400}
+.response-card{padding:21px 25px;border-radius:13px;background:#f7f8fa;box-shadow:0 8px 25px rgba(24,50,80,.08);margin-top:2px}
+.response-card strong{font-size:14px;color:#18304d;font-weight:600}
+.response-card p{font-size:12px;color:#8b98aa;margin-top:7px;line-height:1.55}
+
+.form-card{background:#f7f8fa;border-radius:14px;padding:29px 27px 30px;box-shadow:0 8px 25px rgba(24,50,80,.09)}
+.form-card h3{font-size:15px;color:#173a60;font-weight:600;margin-bottom:23px}
+.form-card label{display:block;font-size:11px;color:#244b72;font-weight:600;margin:0 0 8px}
+.form-card label span{margin-left:2px}
+.form-card input,.form-card select,.form-card textarea{width:100%;border:1px solid #d0d8e2;background:#fff;border-radius:6px;height:48px;padding:0 13px;color:#52677e;font-family:inherit;font-size:12px;outline:none;margin-bottom:16px}
+.form-card input::placeholder,.form-card textarea::placeholder{color:#a7b1be}
+.form-card select{appearance:none;color:#a7b1be;padding-right:38px}
+.select-wrap{position:relative}
+.select-wrap:after{content:"⌄";position:absolute;right:15px;top:14px;color:#64768b;font-size:15px;pointer-events:none}
+.phone-field{height:48px;border:1px solid #d0d8e2;background:#fff;border-radius:6px;display:flex;align-items:center;margin-bottom:16px}
+.phone-field .country{height:100%;display:flex;align-items:center;gap:8px;padding:0 11px;border-right:1px solid #e1e5ea;color:#425b74;font-size:12px}
+.phone-field .country i{font-size:9px}
+.flag{font-size:15px}
+.phone-field input{border:0;margin:0;height:100%;border-radius:0}
+.form-card textarea{height:86px;padding-top:13px;resize:none}
+.form-card button{width:100%;height:48px;border:0;border-radius:7px;background:#30c86b;color:#fff;font-family:inherit;font-size:12px;font-weight:600;cursor:pointer;margin-top:1px}
+
+.footer{min-height:668px;padding:65px 7% 28px;background:radial-gradient(ellipse at 30% 100%,rgba(29,207,172,.35),transparent 50%),linear-gradient(180deg,#06152b 0%,#09203c 35%,#13aa9b 100%)}
+.footer-container{max-width:1250px;margin:0 auto;display:grid;grid-template-columns:1.55fr .8fr 1.25fr 1fr;column-gap:65px}
+.footer-logo{display:flex;align-items:center;gap:9px;color:#fff;font-size:23px;font-weight:600;margin-bottom:20px}
+.footer-logo .logo-mark{color:#d7e7ff}
+.footer-description{color:rgba(255,255,255,.70);font-size:13px;line-height:1.65;margin-bottom:38px}
+.contact-label{color:rgba(255,255,255,.45);font-size:10px;letter-spacing:.6px;font-weight:600;margin-bottom:15px}
+.contact-detail{color:rgba(255,255,255,.78);font-size:13px;margin-bottom:15px}
+.touch-btn{display:inline-flex;align-items:center;justify-content:center;height:40px;padding:0 21px;border-radius:7px;background:#42d56e;color:#fff;font-size:12px;font-weight:600}
+.social-icons{display:flex;align-items:center;gap:13px;margin-top:20px}
+.social-icons a{width:25px;height:25px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px}
+.footer-column{display:flex;flex-direction:column}
+.footer-column h3{color:rgba(255,255,255,.43);font-size:10px;letter-spacing:.6px;font-weight:600;margin-bottom:23px}
+.footer-column a{color:rgba(255,255,255,.82);font-size:13px;line-height:1.4;margin-bottom:18px}
+.footer-bottom{max-width:1250px;margin:73px auto 0;padding-top:25px;border-top:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:space-between}
+.footer-bottom p{color:rgba(255,255,255,.38);font-size:10px}
+.legal-links{display:flex;gap:30px}
+.legal-links a{color:rgba(255,255,255,.40);font-size:10px}
+
+@media(max-width:900px){
+.navbar{width:calc(100% - 30px);left:15px}
+.navbar nav{gap:12px}
+.navbar nav a:not(.get-started){display:none}
+.contact-hero{height:400px;padding:100px 20px 0}
+.hero-inner h1{font-size:34px}
+.connect{padding:55px 25px}
+.connect-grid{grid-template-columns:1fr;gap:45px}
+.footer{padding-left:30px;padding-right:30px}
+.footer-container{grid-template-columns:1fr 1fr;row-gap:50px}
+}
+@media(max-width:600px){
+.left-column h2{font-size:32px}
+.desktop{display:none}
+.footer-container{grid-template-columns:1fr}
+.footer-bottom{flex-direction:column;align-items:flex-start;gap:20px}
+.legal-links{flex-wrap:wrap;gap:15px}
+}.contact-hero {
+  background: #fff !important;
+}
