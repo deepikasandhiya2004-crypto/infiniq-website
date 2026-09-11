@@ -23,9 +23,7 @@ function About() {
       </header>
 
       {/* HERO */}
-      <section className="hero">
-        <span className="tag">About Us</span>
-
+      <section className="about-hero">
         <h1>About Infiniq Studios</h1>
 
         <p>

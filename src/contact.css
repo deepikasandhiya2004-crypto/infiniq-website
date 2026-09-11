@@ -3,15 +3,15 @@ html,body{width:100%;min-height:100%}
 body{font-family:"Inter",sans-serif;color:#172a43;background:#fff}
 a{text-decoration:none}
 
-.navbar{width:calc(100% - 120px);height:74px;position:absolute;top:22px;left:60px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;background:#f4f5f7;border-radius:45px;z-index:10}
+.navbar{width:min(1220px,calc(100% - 48px));height:64px;position:absolute;top:24px;left:50%;transform:translateX(-50%);padding:0 24px;display:flex;align-items:center;justify-content:space-between;background:#f4f5f7;border-radius:45px;z-index:10;box-sizing:border-box}
 .logo{display:flex;align-items:center}
 .logo-mark{position:relative;width:38px;height:38px;display:inline-flex;align-items:center;justify-content:center;color:#3868d8}
 .logo-mark span{font-size:39px;line-height:1;font-weight:700}
 .logo-mark b{position:absolute;right:0px;bottom:6px;font-size:14px;transform:rotate(35deg)}
-.navbar nav{display:flex;align-items:center;gap:30px}
-.navbar nav a{color:#536177;font-size:13px;font-weight:500}
+.navbar nav{display:flex;align-items:center;gap:28px}
+.navbar nav a{color:#536177;font-family:'Gellix',sans-serif;font-size:16px;line-height:19.2px;letter-spacing:-0.16px;font-weight:500}
 .navbar nav a.active{color:#3d617b;border-bottom:2px solid #49c873;padding-bottom:4px}
-.get-started{padding:14px 25px;border-radius:30px;background:#39c96f;color:#fff!important;font-size:13px!important;font-weight:600!important;box-shadow:0 5px 15px rgba(57,201,111,.25);border:0!important}
+.get-started{width:163px;height:46px;padding:12px 40px;border-radius:100px;border:1px solid transparent;background:linear-gradient(137deg, #00DC46 2.91%, #008F2E 96.61%) !important;box-shadow:0px 4px 15px 0px #00000026 !important;font-family:'Gellix',sans-serif;font-weight:600;font-size:16px;line-height:19.2px;letter-spacing:-0.32px;text-align:center;color:#FFFFFF !important;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box}
 
 .contact-hero{height:465px;background:#fff;display:flex;align-items:center;justify-content:center;text-align:center;padding-top:48px}
 .hero-inner{display:flex;flex-direction:column;align-items:center}
@@ -66,7 +66,7 @@ a{text-decoration:none}
 .legal-links a{color:rgba(255,255,255,.40);font-size:10px}
 
 @media(max-width:900px){
-.navbar{width:calc(100% - 30px);left:15px}
+.navbar{width:calc(100% - 30px);left:50%;transform:translateX(-50%)}
 .navbar nav{gap:12px}
 .navbar nav a:not(.get-started){display:none}
 .contact-hero{height:400px;padding:100px 20px 0}

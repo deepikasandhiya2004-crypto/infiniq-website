@@ -35,7 +35,7 @@ import './services.css'
 
       <main>
         {/* HERO */}
-        <section className="hero" id="services">
+        <section className="services-hero" id="services">
           <div className="pill">Our Services</div>
 
           <h1>

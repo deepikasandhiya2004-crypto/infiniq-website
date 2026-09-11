@@ -25,7 +25,7 @@ function CaseStudies() {
         </nav>
       </header>
 
-      <section className="hero">
+      <section className="case-hero">
         <span className="tag">Case Studies</span>
 
         <h1>Our Work &amp; Case Studies</h1>
