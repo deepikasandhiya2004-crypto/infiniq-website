@@ -11,12 +11,13 @@ function Contact() {
         </a>
 
         <nav>
-          <a href="/">Home</a>
-          <a href="/services">Services</a>
-          <a href="#">Blog</a>
-          <a href="/case-studies">Case Studies</a>
-          <a href="/about">About Us</a>
-          <a href="/contact" className="active">Contact</a>
+       <a href="/" className="home-link">Home</a>
+<a href="/services" className="services-link">Services</a>
+          
+         <a className="blog-link">Blog</a>
+         <a className="case-studies-link">Case Studies</a>
+        <a className="about-us-link">About Us</a>
+         <a className="contact-link">Contact</a>
           <a href="/contact" className="get-started">Get Started</a>
         </nav>
       </header>
