@@ -138,7 +138,7 @@ function About() {
             <div className="vicon">🏆</div>
             <h3>Quality</h3>
             <p>
-              We believe every project deserves attention to detail, clear
+              We believe every project deserves attention to detail, clean
               execution, and high standards from start to finish.
             </p>
           </article>

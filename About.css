@@ -51,7 +51,7 @@ a{text-decoration:none;color:inherit}
   padding:10px 20px;
   border-radius:20px;
   background:linear-gradient(98.98deg,#00DC46 13.03%,#008F2E 89.91%);
-  color:#fff;
+  color:hsl(0, 0%, 100%);
   font-family:"Gellix",sans-serif;
   font-size:13.33px;
   font-weight:600;
@@ -66,6 +66,7 @@ a{text-decoration:none;color:inherit}
   width:577px;
   max-width:577px;
   height:158px;
+  margin:0 auto;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -560,10 +561,45 @@ a{text-decoration:none;color:inherit}
 }
 @media(max-width:900px){.navbar nav a:not(.start){display:none}.story{padding:60px 25px;grid-template-columns:1fr}.story-image{height:400px}.vision-grid,.value-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.cta h2{font-size:38px}.hero p br{display:none}}
 @media(max-width:600px){.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;gap:20px}.cta-buttons{flex-direction:column;align-items:center}.cta-buttons a{width:85%}.hero h1{font-size:34px}.values h2{font-size:32px}}
+
+.why-icon.personalized{
+  background:#F0EAFF;
+  color:#8666FF;
+}
+
+.why-icon.modern{
+  background:#F1F0E8;
+  color:#A6A59A;
+}
+
+.why-icon.scalable{
+  background:#E2F9E9;
+  color:#45C86A;
+}
+
+.why-icon.transparent{
+  background:#E8F0F2;
+  color:#507C87;
+}
+
+.why-description{
+  margin:0;
+  padding:24px 16px;
+  font-family:"Gellix",sans-serif;
+  font-weight:500;
+  font-size:10px;
+  line-height:14px;
+  letter-spacing:-0.1px;
+  color:#71717A;
+}/* WHY CHOOSE */
 .why-choose{
-  width:1440px;
+  width:100%;
   max-width:1440px;
   height:1121px;
+  display:block;
+  position:relative;
+  visibility:visible;
+  opacity:1;
   background:#FFFFFF;
   border:1px solid;
   box-sizing:border-box;
@@ -574,8 +610,9 @@ a{text-decoration:none;color:inherit}
   width:1200px;
   max-width:1200px;
   height:831px;
-  position:relative;
   margin:0 auto;
+  position:relative;
+  display:block;
 }
 
 .why-choose-inner h2{
@@ -587,6 +624,7 @@ a{text-decoration:none;color:inherit}
   font-size:47.78px;
   line-height:57.34px;
   letter-spacing:-0.96px;
+  text-align:left;
   color:#00373A;
 }
 
@@ -602,6 +640,7 @@ a{text-decoration:none;color:inherit}
   box-shadow:0px 7px 25px 0px #0000001A;
   overflow:hidden;
   box-sizing:border-box;
+  z-index:2;
 }
 
 .why-item{
@@ -634,7 +673,6 @@ a{text-decoration:none;color:inherit}
   align-items:center;
   justify-content:center;
   font-size:17px;
-  box-sizing:border-box;
 }
 
 .why-icon.business,
