@@ -20,9 +20,9 @@ function Home()  {
 >
             <a className="active" href="#home">Home</a>
             <a href="/services">Services</a>
-  <a href="/blog">Blog</a>
-            <a href="#">Case Studies</a>
-            <a href="#">About Us</a>
+  <a href="http://localhost:5173/blog">Blog</a>
+           <a href="/case-studies">Case Studies</a>
+<a href="/about">About Us</a>
       <a href="/contact">Contact</a>
             <a className="green-btn" href="#contact">Get Started</a>
           </div>

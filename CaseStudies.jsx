@@ -31,10 +31,7 @@ function CaseStudies() {
         <h1>Our Work &amp; Case Studies</h1>
 
         <p>
-          We’re building digital experiences that solve real business
-          challenges and
-          <br />
-          deliver measurable results.
+          We believe in earning our portfolio the honest way — with real clients, real results and real stories.
         </p>
       </section>
 
@@ -43,20 +40,20 @@ function CaseStudies() {
           <div className="case-icon">
             <i className="fa-regular fa-image"></i>
           </div>
+<h2>Case study coming soon</h2>
 
-          <h2>Case study coming soon</h2>
+<p>
+  We're currently partnering with businesses to create
+  <br />
+  impactful digital experiences. Check back soon to
+  <br />
+  explore detailed project success stories.
+</p>
 
-          <p>
-            We’re currently partnering with businesses to create
-            <br />
-            impactful digital experiences. Check back soon to
-            <br />
-            explore detailed project success stories.
-          </p>
-
-          <a className="button" href="#">
-            Become our first case study
-          </a>
+<a href="/contact" className="button">
+  Become our first case study
+</a>
+          
         </div>
       </section>
 
@@ -129,9 +126,9 @@ function CaseStudies() {
             <h4>COMPANY</h4>
             <a href="/about">About Us</a>
             <a href="/services">Services</a>
-            <a href="#">Blog</a>
+            <a href="/">Blog</a>
             <a href="/case-studies">Case Study</a>
-            <a href="#">Contact</a>
+            <a href="/">Contact</a>
           </div>
 
           <div>
