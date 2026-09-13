@@ -74,13 +74,20 @@ a{text-decoration:none;color:inherit}
 .hero{height:468px;text-align:center;padding-top:165px}.tag{
   width:46px;
   height:14px;
+  display:block;
   font-family:"Gellix",sans-serif;
-  font-size:11.11px;
   font-weight:600;
   font-style:normal;
+  font-size:11.11px;
   line-height:13.33px;
   letter-spacing:-0.11px;
+  text-align:center;
   color:#00373A;
+  background:transparent;
+  opacity:1;
+  visibility:visible;
+  position:relative;
+  z-index:10;
 }.hero h1{
   width:577px;
   height:58px;
@@ -103,17 +110,21 @@ a{text-decoration:none;color:inherit}
   text-align:center;
   color:#71717A;
 }.story .tag{
-  width:50px;
-  height:14px;
-  display:inline-block;
+  width:64.67px;
+  height:28.67px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:6px 8px;
+  border-radius:8px;
+  border-top:1.33px solid #B8B6AB;
+  background:#FFFFFF1A;
   font-family:"Gellix",sans-serif;
   font-weight:600;
-  font-style:normal;
   font-size:11.11px;
   line-height:13.33px;
   letter-spacing:0.11px;
-  color:#fff;
-  background:#7E7D6F;
+  color:#00373A;
   opacity:1;
   box-sizing:border-box;
 }
@@ -618,31 +629,28 @@ a{text-decoration:none;color:inherit}
 .why-choose-inner h2{
   width:574px;
   height:58px;
-  margin:0;
-  font-family:"Gellix",sans-serif;
+  font-family:"Gellix", sans-serif;
   font-weight:600;
   font-size:47.78px;
   line-height:57.34px;
   letter-spacing:-0.96px;
-  text-align:left;
   color:#00373A;
+  margin:0;
 }
 
 .why-choose-card{
   position:absolute;
-  top:0;
-  right:0;
+  top:120.33px;
+  left:834px;
   width:486px;
   height:283px;
   background:#FFFFFF;
   border:1px solid #DBD9CC;
   border-radius:12px;
-  box-shadow:0px 7px 25px 0px #0000001A;
+  box-shadow:0 7px 25px 0 #0000001A;
   overflow:hidden;
   box-sizing:border-box;
-  z-index:2;
 }
-
 .why-item{
   width:100%;
   height:56px;
@@ -655,15 +663,63 @@ a{text-decoration:none;color:inherit}
   box-sizing:border-box;
 }
 
-.why-item span{
-  font-family:"Gellix",sans-serif;
-  font-weight:600;
-  font-size:13.33px;
-  line-height:16px;
-  letter-spacing:-0.13px;
-  color:#00373A;
-}
 
+.why-item span{
+  width:221px;
+  height:56px;
+  font-family:"Gellix", sans-serif;
+  font-weight:600;
+  font-style:normal;
+  font-size:23.04px;
+  line-height:27.65px;
+  letter-spacing:-0.46px;
+  color:#00373A;
+  box-sizing:border-box;
+}.why-item:nth-child(1) span{
+  width:221px;
+  height:56px;
+  font-family:"Gellix", sans-serif;
+  font-weight:600;
+  font-style:normal;
+  font-size:23.04px;
+  line-height:27.65px;
+  letter-spacing:-0.46px;
+  color:#00373A;
+  box-sizing:border-box;
+}.why-item:nth-child(2) span{
+  width:297px;
+  height:28px;
+  font-family:"Gellix", sans-serif;
+  font-weight:600;
+  font-style:normal;
+  font-size:23.04px;
+  line-height:27.65px;
+  letter-spacing:-0.46px;
+  color:#00373A;
+  box-sizing:border-box;
+}.why-item:nth-child(3) span{
+  width:275px;
+  height:28px;
+  font-family:"Gellix", sans-serif;
+  font-weight:600;
+  font-style:normal;
+  font-size:23.04px;
+  line-height:27.65px;
+  letter-spacing:-0.46px;
+  color:#00373A;
+  box-sizing:border-box;
+}.why-item:nth-child(4) span{
+  width:275px;
+  height:28px;
+  font-family:"Gellix", sans-serif;
+  font-weight:600;
+  font-style:normal;
+  font-size:23.04px;
+  line-height:27.65px;
+  letter-spacing:-0.46px;
+  color:#00373A;
+  box-sizing:border-box;
+}
 .why-icon{
   width:32px;
   height:32px;
@@ -702,12 +758,21 @@ a{text-decoration:none;color:inherit}
 }
 
 .why-description{
+  width:400px;
+  height:96px;
   margin:0;
-  padding:24px 16px;
-  font-family:"Gellix",sans-serif;
+  padding:0;
+  position:absolute;
+  top:155px;
+  left:32px;
+
+  font-family:"Gellix", sans-serif;
   font-weight:500;
-  font-size:10px;
-  line-height:14px;
-  letter-spacing:-0.1px;
+  font-style:normal;
+  font-size:16px;
+  line-height:24px;
+  letter-spacing:-0.16px;
   color:#71717A;
+
+  box-sizing:border-box;
 }
