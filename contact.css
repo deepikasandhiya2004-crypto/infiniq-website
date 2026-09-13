@@ -103,7 +103,7 @@ a{text-decoration:none}
   max-width:1440px;
   min-height:970px;
   padding:120px;
-  background:#F9F7E8;
+  background:#f2f9e8;
 }
 .connect-grid{max-width:1260px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:95px}
 .left-column{

@@ -17,7 +17,7 @@ function Contact() {
          <a className="blog-link">Blog</a>
          <a className="case-studies-link">Case Studies</a>
         <a className="about-us-link">About Us</a>
-         <a className="contact-link">Contact</a>
+        <a href="/contact" className="contact-link">Contact</a>
           <a href="/contact" className="get-started">Get Started</a>
         </nav>
       </header>

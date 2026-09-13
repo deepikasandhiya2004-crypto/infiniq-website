@@ -18,7 +18,7 @@ function CaseStudies() {
             Case Studies
           </a>
           <a href="/about">About Us</a>
-          <a href="#">Contact</a>
+         <a href="/contact">Contact</a>
           <a className="start" href="#">
             Get Started
           </a>
