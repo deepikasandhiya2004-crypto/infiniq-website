@@ -25,7 +25,7 @@ import './services.css'
             <a href="#">Blog</a>
             <a href="#">Case Studies</a>
             <a href="#">About Us</a>
-            <a href="#contact">Contact</a>
+           <a href="/contact">Contact</a>
             <a className="nav-cta" href="#contact">Get Started</a>
           </div>
 

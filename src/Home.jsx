@@ -23,7 +23,7 @@ function Home()  {
   <a href="/blog">Blog</a>
             <a href="#">Case Studies</a>
             <a href="#">About Us</a>
-            <a href="#contact">Contact</a>
+            <a href="/contact">Contact</a>
             <a className="green-btn" href="#contact">Get Started</a>
           </div>
 

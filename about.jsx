@@ -17,7 +17,7 @@ function About() {
           <a href="#">Blog</a>
           <a href="#">Case Studies</a>
           <a className="active" href="/about">About Us</a>
-          <a href="contact">Contact</a>
+          <a href="/contact">Contact</a>
           <a className="start" href="contact">Get Started</a>
         </nav>
       </header>
@@ -96,7 +96,7 @@ function About() {
               businesses across India and beyond, recognized for creativity,
               innovation, quality, and lasting client relationships. We aim to
               build digital products that inspire growth, solve real business
-              challenges, and create meaningful opportunities for users.
+              challenges, and create meaningful experiences for users.
             </p>
           </article>
 
@@ -165,8 +165,9 @@ function About() {
             <div className="vicon">📖</div>
             <h3>Continuous Learning</h3>
             <p>
-              Technology evolves every day, and so do we. We continuously learn
-              and adapt to deliver future-ready digital solutions.
+               Technology evolves every day, and so do we. We continuously improve our
+  skills to deliver future-ready digital solutions.
+           
             </p>
           </article>
 
@@ -179,7 +180,54 @@ function About() {
             </p>
           </article>
         </div>
-      </section>
+      </section><section className="why-choose">
+  <div className="why-choose-inner">
+
+    <h2>Why Choose Infiniq Studios</h2>
+
+    <div className="why-choose-card">
+
+      <div className="why-item">
+        <div className="why-icon business">💡</div>
+        <span>Business-first<br />approach</span>
+      </div>
+
+      <div className="why-item">
+        <div className="why-icon personalized">✪</div>
+        <span>Personalized solutions</span>
+      </div>
+
+      <div className="why-item">
+        <div className="why-icon modern">♧</div>
+        <span>Modern technologies</span>
+      </div>
+
+      <div className="why-item">
+        <div className="why-icon scalable">♧</div>
+        <span>Scalable solutions</span>
+      </div>
+
+      <div className="why-item">
+        <div className="why-icon transparent">♧</div>
+        <span>Transparent<br />communication</span>
+      </div>
+
+      <div className="why-item">
+        <div className="why-icon reliable">💡</div>
+        <span>Reliable long-term<br />support</span>
+      </div>
+
+      <p className="why-description">
+        Our partnership doesn't end after launch. We provide
+        continuous maintenance, updates, performance
+        optimization, and technical support to ensure your
+        digital products continue to perform at their best.
+      </p>
+
+    </div>
+
+  </div>
+</section>
 
       {/* CTA */}
       <section className="cta">
@@ -198,9 +246,9 @@ function About() {
         </p>
 
         <div className="cta-buttons">
-          <a href="#contact">
-            Get Free Consultation <b>→</b>
-          </a>
+          <a href="/contact">
+  Get Free Consultation <b className="cta-arrow">→</b>
+</a>
 
           <a href="/services">View Our Services</a>
         </div>
@@ -231,10 +279,9 @@ function About() {
 
             <p>+91 99408 09952</p>
             <p>infiniqstudios@gmail.com</p>
-
-            <a className="touch" href="#contact">
-              Get in Touch
-            </a>
+<a className="touch" href="/contact">
+  Get in Touch
+</a>
 
             <div className="social">
               <span>f</span>
