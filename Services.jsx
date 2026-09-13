@@ -22,9 +22,9 @@ import './services.css'
       <div className="nav-links">
             <a href="/">Home</a>
             <a className="active" href="/services">Services</a>
-            <a href="#">Blog</a>
-            <a href="#">Case Studies</a>
-            <a href="#">About Us</a>
+            <a href="/services">Blog</a>
+            <a href="/case studies">Case Studies</a>
+            <a href="/about us">About Us</a>
            <a href="/contact">Contact</a>
             <a className="nav-cta" href="#contact">Get Started</a>
           </div>
