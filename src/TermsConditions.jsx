@@ -1,16 +1,13 @@
 import './TermsConditions.css'
+import logoPng from './assets/logo.png'
 
 function TermsConditions() {
   return (
     <>
       <header className="navbar">
-        <div className="logo">
-          <div className="logo-icon">
-            <span>i</span>
-            <span>◆</span>
-          </div>
-          <span>infiniq</span>
-        </div>
+        <a className="logo" href="/">
+          <img src={logoPng} alt="Infiniq Logo" className="logo-img" />
+        </a>
 
         <nav>
           <a href="/">Home</a>
@@ -116,13 +113,9 @@ function TermsConditions() {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-brand">
-            <div className="footer-logo">
-              <div className="logo-icon">
-                <span>i</span>
-                <span>◆</span>
-              </div>
-              <span>infiniq</span>
-            </div>
+            <a className="footer-logo" href="/">
+              <img src={logoPng} alt="Infiniq Logo" className="footer-logo-img" />
+            </a>
 
             <p className="footer-description">
               Designing digital products, websites, and

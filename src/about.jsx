@@ -1,14 +1,12 @@
 import './About.css'
+import logoPng from './assets/logo.png'
 
 function About() {
   return (
     <>
       <header className="navbar">
         <a className="brand" href="/">
-          <span className="brand-icon">
-            <b>i</b>
-            <i>◆</i>
-          </span>
+          <img src={logoPng} alt="Infiniq Logo" className="logo-img" />
         </a>
 
         <nav>
@@ -208,14 +206,9 @@ function About() {
       <footer className="footer">
         <div className="footer-grid">
           <div className="footer-brand">
-            <div className="footer-logo">
-              <span className="brand-icon">
-                <b>i</b>
-                <i>◆</i>
-              </span>
-
-              <strong>infiniq</strong>
-            </div>
+            <a className="footer-logo" href="/">
+              <img src={logoPng} alt="Infiniq Logo" className="footer-logo-img" />
+            </a>
 
             <p>
               Designing digital products, websites, and

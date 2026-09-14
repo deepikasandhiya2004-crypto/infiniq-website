@@ -1,4 +1,99 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+import logoPng from './assets/logo.png'
+
+const topRowStages = [
+  {
+    stage: "STAGE 1",
+    tagClass: "tag-orange",
+    title: "Discover",
+    text: "We learn your business, audience and constraints before proposing anything.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    )
+  },
+  {
+    stage: "STAGE 2",
+    tagClass: "tag-green",
+    title: "Strategy",
+    text: "Sitemaps, scope, milestones and a written plan you approve before work starts.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M9 11l3 3L22 4"></path>
+        <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+      </svg>
+    )
+  },
+  {
+    stage: "STAGE 3",
+    tagClass: "tag-blue",
+    title: "Design",
+    text: "Wireframes then high-fidelity UI, reviewed in fixed rounds.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+        <circle cx="8.5" cy="8.5" r="1.5"></circle>
+        <polyline points="21 15 16 10 5 21"></polyline>
+      </svg>
+    )
+  },
+  {
+    stage: "STAGE 4",
+    tagClass: "tag-orange",
+    title: "Development",
+    text: "Clean, responsive, accessible build with weekly demos.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+        <line x1="8" y1="21" x2="16" y2="21"></line>
+        <line x1="12" y1="17" x2="12" y2="21"></line>
+      </svg>
+    )
+  },
+  {
+    stage: "STAGE 5",
+    tagClass: "tag-orange",
+    title: "Testing",
+    text: "Cross-browser, device, performance, accessibility and form testing.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M12 8v4l3 3"></path>
+      </svg>
+    )
+  }
+];
+
+const bottomRowStages = [
+  {
+    stage: "STAGE 6",
+    tagClass: "tag-orange",
+    title: "Launch",
+    text: "Deployment, analytics, search console and handover training.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.71 1.26-1.5 1.5-2.5l-4.5-4.5c-1 1-1.79 1.5-2.5 1.5z"></path>
+        <path d="M12 15l-3-3 7.5-7.5 3 3L12 15z"></path>
+      </svg>
+    )
+  },
+  {
+    stage: "STAGE 7",
+    tagClass: "tag-green",
+    title: "Growth Support",
+    text: "Maintenance, content and SEO work to keep improving after launch.",
+    icon: (
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <line x1="18" y1="20" x2="18" y2="10"></line>
+        <line x1="12" y1="20" x2="12" y2="4"></line>
+        <line x1="6" y1="20" x2="6" y2="14"></line>
+      </svg>
+    )
+  }
+];
+
 function Home()  {
   const [menuOpen, setMenuOpen] = useState(false)
   const [projectIndex, setProjectIndex] = useState(0)
@@ -9,9 +104,8 @@ function Home()  {
     <>
       <header className="header">
         <nav className="nav">
-          <a className="logo" href="#home">
-            <span className="mark"><i></i><b></b></span>
-            <strong>infiniq</strong>
+          <a className="logo" href="/">
+            <img src={logoPng} alt="Infiniq Logo" className="logo-img" />
           </a>
 
          <div
@@ -132,25 +226,58 @@ function Home()  {
         </section>
 
         <section className="stages">
-          <h2>Seven stages, fully visible</h2>
+          <div className="stages-container">
+            <div className="stages-header">
+              <span className="process-label">Our Process</span>
+              <h2>Seven stages, fully visible</h2>
+              <p className="stages-subtitle">
+                Every engagement follows the same path so you always know what is happening and what comes next.
+              </p>
+            </div>
 
-          <div className="stage-track">
-            {[
-              ["⌕", "", "STAGE 1", "Discover", "We learn your business, audience and constraints before proposing anything."],
-              ["▣", "green-t", "STAGE 2", "Strategy", "Sitemaps, scope, milestones and a written plan you approve before work starts."],
-              ["◉", "blue-t", "STAGE 3", "Design", "Wireframes then high-fidelity UI, reviewed in fixed rounds."],
-              ["▣", "orange-t", "STAGE 4", "Development", "Clean, responsive, accessible build with weekly demos."],
-              ["⚙", "", "STAGE 5", "Testing", "Cross-browser, device, performance, accessibility and form testing."],
-              ["♙", "", "STAGE 6", "Launch", "Deployment, analytics setup, console and handover training."],
-              ["▥", "green-t", "STAGE 7", "Growth Support", "Maintenance, content and SEO work to keep improving after launch."]
-            ].map(([icon, iconClass, stage, title, text]) => (
-              <div className="stage" key={stage}>
-                <span className={`stage-icon ${iconClass}`}>{icon}</span>
-                <small>{stage}</small>
-                <h3>{title}</h3>
-                <p>{text}</p>
-              </div>
-            ))}
+            <div className="stages-grid-top">
+              {topRowStages.map((item, index) => (
+                <React.Fragment key={item.stage}>
+                  <div className="stage-card">
+                    <div className="stage-icon-box">{item.icon}</div>
+                    <small className={`stage-tag ${item.tagClass}`}>{item.stage}</small>
+                    <h3 className="stage-title">{item.title}</h3>
+                    <div className="stage-desc-box">
+                      <p>{item.text}</p>
+                    </div>
+                  </div>
+                  {index < topRowStages.length - 1 && (
+                    <div className="stage-arrow">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#20e382" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </div>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
+
+            <div className="stages-grid-bottom">
+              {bottomRowStages.map((item, index) => (
+                <React.Fragment key={item.stage}>
+                  <div className="stage-card">
+                    <div className="stage-icon-box">{item.icon}</div>
+                    <small className={`stage-tag ${item.tagClass}`}>{item.stage}</small>
+                    <h3 className="stage-title">{item.title}</h3>
+                    <div className="stage-desc-box">
+                      <p>{item.text}</p>
+                    </div>
+                  </div>
+                  {index < bottomRowStages.length - 1 && (
+                    <div className="stage-arrow">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#20e382" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                      </svg>
+                    </div>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -292,9 +419,8 @@ function Home()  {
       <footer className="footer">
         <div className="footer-grid">
           <div className="about">
-            <a className="logo light">
-              <span className="mark"><i></i><b></b></span>
-              <strong>infiniq</strong>
+            <a className="logo light" href="/">
+              <img src={logoPng} alt="Infiniq Logo" className="footer-logo-img" />
             </a>
 
             <p>

@@ -1,13 +1,12 @@
 import './contact.css'
+import logoPng from './assets/logo.png'
+
 function Contact() {
   return (
     <>
       <header className="navbar">
         <a className="logo" href="/">
-          <span className="logo-mark">
-            <span>i</span>
-            <b>◆</b>
-          </span>
+          <img src={logoPng} alt="Infiniq Logo" className="logo-img" />
         </a>
 
         <nav>
@@ -144,13 +143,9 @@ function Contact() {
       <footer className="footer">
         <div className="footer-container">
           <div className="footer-brand">
-            <div className="footer-logo">
-              <span className="logo-mark">
-                <span>i</span>
-                <b>◆</b>
-              </span>
-              <span>infiniq</span>
-            </div>
+            <a className="footer-logo" href="/">
+              <img src={logoPng} alt="Infiniq Logo" className="footer-logo-img" />
+            </a>
 
             <p className="footer-description">
               Designing digital products, websites, and

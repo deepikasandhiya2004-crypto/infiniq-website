@@ -1,11 +1,12 @@
 import './Cookiepolicy.css'
+import logoPng from './assets/logo.png'
 
 function CookiePolicy() {
   return (
     <div className="cookie-page">
       <header className="cookie-nav">
         <a className="cookie-logo" href="/">
-          i<span>◆</span>
+          <img src={logoPng} alt="Infiniq Logo" className="logo-img" />
         </a>
 
         <nav>
@@ -78,9 +79,9 @@ function CookiePolicy() {
       <footer className="cookie-footer">
         <div className="cookie-footer-grid">
           <div className="cookie-brand">
-            <div className="cookie-flogo">
-              i<span>◆</span> <b>infiniq</b>
-            </div>
+            <a className="cookie-flogo" href="/">
+              <img src={logoPng} alt="Infiniq Logo" className="footer-logo-img" />
+            </a>
 
             <p>
               Designing digital products, websites, and marketing systems that

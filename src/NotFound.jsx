@@ -1,11 +1,12 @@
 import './NotFound.css'
+import logoPng from './assets/logo.png'
 
 function NotFound() {
   return (
     <div className="page">
       <header className="nav">
         <a className="logo" href="/">
-          <b>i</b><span>◆</span>
+          <img src={logoPng} alt="Infiniq Logo" className="logo-img" />
         </a>
 
         <nav>
@@ -53,12 +54,9 @@ function NotFound() {
         <div className="footer-grid">
 
           <div className="brand">
-            <div className="flogo">
-              <b>i</b>
-              <span>◆</span>
-              <strong>infiniq</strong>
-              <small>STUDIOS</small>
-            </div>
+            <a className="flogo" href="/">
+              <img src={logoPng} alt="Infiniq Logo" className="footer-logo-img" />
+            </a>
 
             <p>
               Designing digital products, websites, and marketing systems

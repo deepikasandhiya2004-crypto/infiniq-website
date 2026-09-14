@@ -1,13 +1,12 @@
 import './case-studies.css'
+import logoPng from './assets/logo.png'
+
 function CaseStudies() {
   return (
     <>
       <header className="navbar">
         <a className="logo" href="/">
-          <span className="mark">
-            <b>i</b>
-            <i>◆</i>
-          </span>
+          <img src={logoPng} alt="Infiniq Logo" className="logo-img" />
         </a>
 
         <nav>
@@ -92,13 +91,9 @@ function CaseStudies() {
       <footer className="footer">
         <div className="footer-grid">
           <div className="brand-col">
-            <div className="footer-logo">
-              <span className="mark light">
-                <b>i</b>
-                <i>◆</i>
-              </span>
-              <strong>infiniq</strong>
-            </div>
+            <a className="footer-logo" href="/">
+              <img src={logoPng} alt="Infiniq Logo" className="footer-logo-img" />
+            </a>
 
             <p>
               Designing digital products, websites, and
