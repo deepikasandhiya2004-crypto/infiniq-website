@@ -4,8 +4,9 @@ import './assets/Blog.css'
 function Blog() {
   const [menuOpen, setMenuOpen] = useState(false)
 
- return (
-  <div className="blog-layout">
+  return (
+    <div className="blog-layout">
+
       {/* ================= NAVBAR ================= */}
       <header className="header">
         <nav className="nav">
@@ -47,7 +48,6 @@ function Blog() {
 
       {/* ================= BLOG HERO ================= */}
       <section className="blog-hero">
-
         <div className="blog-hero-content">
 
           <span className="blog-label">
@@ -64,7 +64,6 @@ function Blog() {
           </p>
 
         </div>
-
       </section>
 
 
@@ -84,35 +83,13 @@ function Blog() {
 
         {/* Categories */}
         <div className="blog-filters">
-
-          <button className="active">
-            All
-          </button>
-
-          <button>
-            Website
-          </button>
-
-          <button>
-            Marketing
-          </button>
-
-          <button>
-            AI
-          </button>
-
-          <button>
-            Business
-          </button>
-
-          <button>
-            Design
-          </button>
-
-          <button>
-            Development
-          </button>
-
+          <button className="active">All</button>
+          <button>Website</button>
+          <button>Marketing</button>
+          <button>AI</button>
+          <button>Business</button>
+          <button>Design</button>
+          <button>Development</button>
         </div>
 
 
@@ -151,7 +128,6 @@ function Blog() {
             </a>
 
           </div>
-
         </article>
 
 
@@ -164,17 +140,11 @@ function Blog() {
 
           {/* Card 1 */}
           <article className="blog-card">
-
             <div className="blog-card-image pink"></div>
 
             <div className="blog-meta">
-              <span className="blog-tag">
-                Development
-              </span>
-
-              <span>
-                April 2026
-              </span>
+              <span className="blog-tag">Development</span>
+              <span>April 2026</span>
             </div>
 
             <h3>
@@ -186,26 +156,17 @@ function Blog() {
               actually turn visitors into customers.
             </p>
 
-            <a href="#">
-              Read article ›
-            </a>
-
+            <a href="#">Read article ›</a>
           </article>
 
 
           {/* Card 2 */}
           <article className="blog-card">
-
             <div className="blog-card-image green"></div>
 
             <div className="blog-meta">
-              <span className="blog-tag">
-                SEO
-              </span>
-
-              <span>
-                April 2026
-              </span>
+              <span className="blog-tag">SEO</span>
+              <span>April 2026</span>
             </div>
 
             <h3>
@@ -213,30 +174,21 @@ function Blog() {
             </h3>
 
             <p>
-              Core Web Vitals, structured data, and the fundamentals
-              search engines quietly reward.
+              Core Web Vitals, structured data, and the fundamentals search
+              engines quietly reward.
             </p>
 
-            <a href="#">
-              Read article ›
-            </a>
-
+            <a href="#">Read article ›</a>
           </article>
 
 
           {/* Card 3 */}
           <article className="blog-card">
-
             <div className="blog-card-image blue"></div>
 
             <div className="blog-meta">
-              <span className="blog-tag">
-                UI/UX
-              </span>
-
-              <span>
-                April 2026
-              </span>
+              <span className="blog-tag">UI/UX</span>
+              <span>April 2026</span>
             </div>
 
             <h3>
@@ -244,30 +196,21 @@ function Blog() {
             </h3>
 
             <p>
-              How to build a design system that scales without eating
-              your product roadmap.
+              How to build a design system that scales without eating your
+              product roadmap.
             </p>
 
-            <a href="#">
-              Read article ›
-            </a>
-
+            <a href="#">Read article ›</a>
           </article>
 
 
           {/* Card 4 */}
           <article className="blog-card">
-
             <div className="blog-card-image lavender"></div>
 
             <div className="blog-meta">
-              <span className="blog-tag">
-                Marketing
-              </span>
-
-              <span>
-                April 2026
-              </span>
+              <span className="blog-tag">Marketing</span>
+              <span>April 2026</span>
             </div>
 
             <h3>
@@ -279,26 +222,17 @@ function Blog() {
               fall into.
             </p>
 
-            <a href="#">
-              Read article ›
-            </a>
-
+            <a href="#">Read article ›</a>
           </article>
 
 
           {/* Card 5 */}
           <article className="blog-card">
-
             <div className="blog-card-image sky"></div>
 
             <div className="blog-meta">
-              <span className="blog-tag">
-                AI
-              </span>
-
-              <span>
-                April 2026
-              </span>
+              <span className="blog-tag">AI</span>
+              <span>April 2026</span>
             </div>
 
             <h3>
@@ -310,26 +244,17 @@ function Blog() {
               marketing.
             </p>
 
-            <a href="#">
-              Read article ›
-            </a>
-
+            <a href="#">Read article ›</a>
           </article>
 
 
           {/* Card 6 */}
           <article className="blog-card">
-
             <div className="blog-card-image violet"></div>
 
             <div className="blog-meta">
-              <span className="blog-tag">
-                Business
-              </span>
-
-              <span>
-                April 2026
-              </span>
+              <span className="blog-tag">Business</span>
+              <span>April 2026</span>
             </div>
 
             <h3>
@@ -337,18 +262,14 @@ function Blog() {
             </h3>
 
             <p>
-              A repeatable process for shipping software that solves
-              real problems, fast.
+              A repeatable process for shipping software that solves real
+              problems, fast.
             </p>
 
-            <a href="#">
-              Read article ›
-            </a>
-
+            <a href="#">Read article ›</a>
           </article>
 
         </div>
-
       </main>
 
 
@@ -368,7 +289,6 @@ function Blog() {
         </p>
 
         <div className="newsletter-form">
-
           <input
             type="email"
             placeholder="your@email.com"
@@ -377,7 +297,6 @@ function Blog() {
           <button>
             Subscribe
           </button>
-
         </div>
 
       </section>
@@ -438,94 +357,42 @@ function Blog() {
 
           {/* Company */}
           <div>
+            <small>COMPANY</small>
 
-            <small>
-              COMPANY
-            </small>
-
-            <a href="/about">
-              About Us
-            </a>
-
-            <a href="/services">
-              Services
-            </a>
-
-            <a href="/blog">
-              Blog
-            </a>
-
-            <a href="/case-studies">
-              Case Study
-            </a>
-
-            <a href="/contact">
-              Contact
-            </a>
-
+            <a href="/about">About Us</a>
+            <a href="/services">Services</a>
+            <a href="/blog">Blog</a>
+            <a href="/case-studies">Case Study</a>
+            <a href="/contact">Contact</a>
           </div>
 
 
           {/* Development */}
           <div>
+            <small>DEVELOPMENT</small>
 
-            <small>
-              DEVELOPMENT
-            </small>
-
-            <a>
-              Website Development
-            </a>
-
-            <a>
-              E-commerce Development
-            </a>
-
-            <a>
-              Web Application Development
-            </a>
-
-            <a>
-              Mobile App Development
-            </a>
-
-            <a>
-              Maintenance &amp; Support
-            </a>
-
+            <a>Website Development</a>
+            <a>E-commerce Development</a>
+            <a>Web Application Development</a>
+            <a>Mobile App Development</a>
+            <a>Maintenance &amp; Support</a>
           </div>
 
 
           {/* Marketing */}
           <div>
+            <small>MARKETING</small>
 
-            <small>
-              MARKETING
-            </small>
-
-            <a>
-              Digital Marketing
-            </a>
-
-            <a>
-              Search Engine Optimization
-            </a>
-
-            <a>
-              Social Media Marketing
-            </a>
-
-            <a>
-              Performance Marketing
-            </a>
-
+            <a>Digital Marketing</a>
+            <a>Search Engine Optimization</a>
+            <a>Social Media Marketing</a>
+            <a>Performance Marketing</a>
           </div>
 
         </div>
 
 
         <div className="bottom">
-
           <span>
             © 2026 Infiniq. All rights reserved.
           </span>
@@ -533,7 +400,6 @@ function Blog() {
           <span>
             Privacy Policy　 Terms of Service　 Cookie Policy
           </span>
-
         </div>
 
       </footer>
