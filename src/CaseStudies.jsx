@@ -1,5 +1,5 @@
 import './case-studies.css'
-import logoPng from './assets/logo.png'
+import logoPng from './assets/logo.svg'
 
 function CaseStudies() {
   return (

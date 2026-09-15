@@ -40,16 +40,17 @@ a {
 }
 
 .nav {
-  height: 64px;
-  background: rgba(255, 255, 255, 0.94);
-  border-radius: 40px;
+  height: 66px;
+  background: rgba(249, 247, 232, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100px;
   padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 8px 30px #0c164020;
   box-sizing: border-box;
-  width: 100%;
+  width: min(1152px, 100%);
 }
 
 .logo {

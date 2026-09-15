@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './assets/Blog.css'
-import logoPng from './assets/logo.png'
+import logoPng from './assets/logo.svg'
 
 function Blog() {
   const [menuOpen, setMenuOpen] = useState(false)

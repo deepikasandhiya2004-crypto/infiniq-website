@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logoPng from './assets/logo.png'
+import logoPng from './assets/logo.svg'
 
 const topRowStages = [
   {

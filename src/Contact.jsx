@@ -1,5 +1,5 @@
 import './contact.css'
-import logoPng from './assets/logo.png'
+import logoPng from './assets/logo.svg'
 
 function Contact() {
   return (
